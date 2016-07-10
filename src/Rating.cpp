@@ -1,10 +1,7 @@
 #include "Rating.h"
 #include "tgmath.h"
 
-struct Expected {
-    int A;
-    int B;
-};
+int K = 32;
 
 Rating::Rating()
 {
@@ -18,8 +15,12 @@ struct Expected Rating::predict(int rA, int rB) {
     return result;
 }
 
-int Rating::newRating(int rA, int rB, int outcome) {
-
+struct Expected Rating::newRating(int rA, int rB, int outcome) {
+    Expected result;
+    Expected p = predict(rA, rB);
+    result.A = rA + (K * (outcome - p.A));
+    result.B = rB + (K * (-outcome - p.B));
+    return result;
 }
 
 Rating::~Rating()

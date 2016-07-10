@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1468164061 source:c:\users\precastwig\documents\chessmmr\main.cpp
+	<iostream>
+	<string>
+	"Rating.h"
+	"Savedata.h"
+
+1468161783 c:\users\precastwig\documents\chessmmr\include\rating.h
+
+1468161790 source:c:\users\precastwig\documents\chessmmr\src\rating.cpp
+	"Rating.h"
+	"tgmath.h"
+
+1468164477 c:\users\precastwig\documents\chessmmr\include\savedata.h
+	<string>
+
+1468164043 source:c:\users\precastwig\documents\chessmmr\src\savedata.cpp
+	"Savedata.h"
+	<iostream>
+

@@ -48,6 +48,7 @@ class Savedata
         void loadfromfile();
         void savetofile();
         void listplayers();
+        void deleteplayer(int ID);
     protected:
 };
 

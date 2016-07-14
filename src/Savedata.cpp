@@ -40,6 +40,10 @@ void Savedata::addmatch(int ID1,int ID2,int win) {
     delete r;
 }
 
+void Savedata::deleteplayer(int ID) {
+    people.erase(people.begin()+ ID);
+}
+
 void Savedata::listplayers() {
     for (int i = 0; i < people.size(); i++) {
         cout << i << ". " << people[i].name << " - " << people[i].ELO << "\n";

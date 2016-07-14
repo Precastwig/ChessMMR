@@ -18,9 +18,9 @@ void addplayer() {
 
 void addmatch() {
     int ID1, ID2, win;
-    cout << "Player ID 1:\n#";
+    cout << "Player ID:\n#";
     cin >> ID1;
-    cout << "Player ID 2:\n#";
+    cout << "Player ID:\n#";
     cin >> ID2;
     cout << "Who won, Player ID " << ID1 << " or player ID " << ID2 << "?\n#";
     cin >> win;
@@ -30,6 +30,15 @@ void addmatch() {
         win = 2;
     }
     s->addmatch(ID1,ID2,win);
+}
+
+void removeplayer() {
+    cout << "Player ID:\n";
+    int ID;
+    cin >> ID;
+    if (ID >= 0) {
+        s->deleteplayer(ID);
+    }
 }
 
 void menu() {
@@ -44,7 +53,8 @@ void menu() {
         cout << "**          Menu         **\n";
         cout << "* 1. Add player\n";
         cout << "* 2. Add match\n";
-        cout << "* 3. Save and quit\n";
+        cout << "* 3. Remove player\n";
+        cout << "* 4. Save and quit\n";
         cout << "* ### *\n#";
         int choice;
         cin >> choice;
@@ -53,6 +63,8 @@ void menu() {
         } else if (choice == 2) {
             addmatch();
         } else if (choice == 3) {
+            removeplayer();
+        } else if (choice == 4) {
             con = false;
         }
     }

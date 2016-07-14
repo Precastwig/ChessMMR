@@ -1,20 +1,26 @@
 # depslib dependency file v1.0
-1468164061 source:c:\users\precastwig\documents\chessmmr\main.cpp
+1468514397 source:c:\users\precastwig\documents\chessmmr\main.cpp
 	<iostream>
 	<string>
+	<unistd.h>
 	"Rating.h"
 	"Savedata.h"
 
-1468161783 c:\users\precastwig\documents\chessmmr\include\rating.h
+1468514179 c:\users\precastwig\documents\chessmmr\include\rating.h
 
-1468161790 source:c:\users\precastwig\documents\chessmmr\src\rating.cpp
+1468514210 source:c:\users\precastwig\documents\chessmmr\src\rating.cpp
 	"Rating.h"
 	"tgmath.h"
 
-1468164477 c:\users\precastwig\documents\chessmmr\include\savedata.h
+1468513758 c:\users\precastwig\documents\chessmmr\include\savedata.h
 	<string>
+	<fstream>
+	<vector>
 
-1468164043 source:c:\users\precastwig\documents\chessmmr\src\savedata.cpp
+1468514720 source:c:\users\precastwig\documents\chessmmr\src\savedata.cpp
 	"Savedata.h"
+	"Rating.h"
 	<iostream>
+	<fstream>
+	<iterator>
 

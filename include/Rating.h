@@ -2,8 +2,8 @@
 #define RATING_H
 
 struct Expected {
-    int A;
-    int B;
+    double A;
+    double B;
 };
 
 class Rating
@@ -11,8 +11,8 @@ class Rating
     public:
         Rating();
         virtual ~Rating();
-        struct Expected predict(int rA, int rB);
-        struct Expected newRating(int rA, int rB, int outcome);
+        struct Expected predict(double rA, double rB);
+        struct Expected newRating(double rA, double rB, double outcome);
     protected:
     private:
 };
